@@ -22,7 +22,7 @@ class MtGox():
 		data = urllib.urlencode({"nonce": int(time.time()*100000),})
 		hash_data = path + chr(0) + data
 		header = {
-			'User-Agent': 'PolyGox',
+			'User-Agent': 'Gekkox',
 			'Rest-Key': self.auth_key,
 			'Rest-Sign': sign_data(self.auth_secret, hash_data),
 		}
